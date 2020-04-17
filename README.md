@@ -17,5 +17,9 @@ Here having Shell script <mac_address_identifier.sh> to automate the docker imag
 
 If you want check another Mac Address give 1 as input if not type 0 it will exit program
 
+FEW CRITICAL SECURITY PRACTICES TAKEN CARE HERE AS : 
+Prefered alpine-based images over full-blown system OS images
+Useed COPY instead of ADD since Arbitrary URLs specified for ADD could result in MITM attacks, or sources of malicious data. In addition, ADD implicitly unpacks local archives which may not be expected and result in path traversal .
+Used a .dockerignore file to avoid a hazardous COPY instruction,which pulls in sensitive files that are part of the build context
+Usied api-key as security authetication on fetching MAC data 
 
-   
