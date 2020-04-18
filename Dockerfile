@@ -9,6 +9,11 @@ RUN apk add --no-cache curl
 COPY invokemacapi.sh /home/macaddress/
 # Change the mode of execution for shell else will throw execution error 
 RUN chmod +x /home/macaddress/invokemacapi.sh
+#Below will install Jq on runtime
+RUN wget -O  jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+RUN chmod +x ./jq
+RUN cp jq /usr/bin
+
 # Never execute any code as sudo user for dockerfile inline with best security practices 
 WORKDIR /
 
