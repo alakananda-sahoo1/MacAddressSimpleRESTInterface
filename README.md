@@ -15,8 +15,6 @@ Here having Shell script <mac_address_identifier.sh> to automate the docker imag
    Output is Like
 		Mac Address <Address of MAC>  is associated with <Company Name>
 
-If you want check another Mac Address give 1 as input if not type 0 it will exit program
-
 FEW CRITICAL SECURITY PRACTICES TAKEN CARE HERE AS : 
 
 #Prefered alpine-based images over full-blown system OS images
