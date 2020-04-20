@@ -6,7 +6,7 @@ Any Linux server with Docker installed.Refer the document to install the docker 
 signup in https://macaddress.io and get the apikey to be used as input to generate the output.
 
 Usage:
-
+Prerequiste : Must have docker and linux OS of any latest version.
 Here having Shell script <mac_address_identifier.sh> to automate the docker image building and running process.Now run the above script.
 
                              ./mac_address_identifier.sh <apikey> <MAC Address>  
